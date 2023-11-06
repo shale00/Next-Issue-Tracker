@@ -25,7 +25,9 @@ export default function RootLayout({
     <html lang="en">
       {/* changed inter.variable to its original inter.className because variable is showing default font-family and className is showing inter*/}
       <body className={inter.className}>
-        <Theme appearance="light" accentColor="purple">
+        <Theme 
+        // appearance="light" 
+        accentColor="purple">
           <NavBar />
           <main className="p-5">{children}</main>
         </Theme>
