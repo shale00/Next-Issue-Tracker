@@ -1,4 +1,4 @@
-import prisma from "@/prisma/client";
+import prisma from "@/lib/prisma";
 import { Status } from "@prisma/client";
 import { Flex } from "@radix-ui/themes";
 import IssueActions from "./IssueActions";
@@ -19,8 +19,7 @@ const IssuesPage = async ({ searchParams }: Props) => {
 
   const where = { status };
 
-  const orderBy = columnNames
-    .includes(searchParams.orderBy)
+  const orderBy = columnNames.includes(searchParams.orderBy)
     ? { [searchParams.orderBy]: "asc" }
     : undefined;
 
@@ -52,8 +51,8 @@ const IssuesPage = async ({ searchParams }: Props) => {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: 'Issue List',
-  description: 'View all project issues'
-}
+  title: "Issue List",
+  description: "View all project issues",
+};
 
 export default IssuesPage;

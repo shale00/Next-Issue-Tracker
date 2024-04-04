@@ -1,5 +1,5 @@
 import authOptions from "@/app/auth/authOptions";
-import prisma from "@/prisma/client";
+import prisma from "@/lib/prisma";
 import { Box, Flex, Grid } from "@radix-ui/themes";
 import { getServerSession } from "next-auth";
 import { notFound } from "next/navigation";
