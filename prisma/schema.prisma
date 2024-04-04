@@ -6,7 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -29,7 +29,7 @@ enum Status {
 
 model Account {
   id                String  @id @default(cuid())
-  userId            String
+  userId            String 
   type              String
   provider          String
   providerAccountId String
