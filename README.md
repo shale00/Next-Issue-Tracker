@@ -45,4 +45,4 @@ Next Issue Tracker was built using the following tech:
 
 ## LiveSite
 
-https://next-issue-tracker-beige.vercel.app/
+https://next-issue-tracker-shale00s-projects.vercel.app/
